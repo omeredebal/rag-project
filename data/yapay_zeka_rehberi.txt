@@ -1,0 +1,89 @@
+# Yapay Zeka ve Makine Öğrenmesi
+
+## Yapay Zeka Nedir?
+
+Yapay Zeka (AI - Artificial Intelligence), makinelerin insan benzeri zeka sergilemesini sağlayan teknolojiler bütünüdür. Öğrenme, problem çözme, karar verme gibi yetenekleri kapsar.
+
+## Makine Öğrenmesi
+
+Makine Öğrenmesi (ML - Machine Learning), yapay zekanın bir alt dalıdır. Sistemlerin deneyimlerden öğrenmesini ve açıkça programlanmadan gelişmesini sağlar.
+
+### Denetimli Öğrenme (Supervised Learning)
+Etiketli verilerle eğitim yapılır. Sistem, girdi-çıktı ilişkisini öğrenir. Örnek: spam filtreleme, görüntü sınıflandırma.
+
+### Denetimsiz Öğrenme (Unsupervised Learning)
+Etiketsiz verilerle çalışır. Sistem, verideki örüntüleri kendisi keşfeder. Örnek: müşteri segmentasyonu, anomali tespiti.
+
+### Pekiştirmeli Öğrenme (Reinforcement Learning)
+Ödül-ceza mekanizması ile öğrenme. Sistem, deneme-yanılma ile en iyi stratejiyi bulur. Örnek: oyun oynama, robot kontrolü.
+
+## Derin Öğrenme
+
+Derin Öğrenme (Deep Learning), yapay sinir ağlarının çok katmanlı versiyonlarını kullanır. Görüntü tanıma, doğal dil işleme gibi karmaşık görevlerde başarılıdır.
+
+### Yapay Sinir Ağları
+İnsan beyninden esinlenilmiştir. Nöronlar ve bağlantılardan oluşur. Her bağlantının bir ağırlığı vardır.
+
+### Popüler Mimariler
+- CNN (Convolutional Neural Networks): Görüntü işleme için
+- RNN (Recurrent Neural Networks): Sıralı veriler için
+- Transformer: Doğal dil işleme için (GPT, BERT)
+
+## Doğal Dil İşleme (NLP)
+
+Doğal Dil İşleme, bilgisayarların insan dilini anlaması ve üretmesiyle ilgilenir.
+
+### Uygulamalar
+- Metin sınıflandırma
+- Duygu analizi
+- Makine çevirisi
+- Soru-cevap sistemleri
+- Metin özetleme
+
+### Büyük Dil Modelleri (LLM)
+GPT, BERT, LLaMA gibi modeller milyarlarca parametre içerir. Metin üretme, kod yazma, çeviri gibi görevlerde insan seviyesinde performans gösterir.
+
+## RAG (Retrieval-Augmented Generation)
+
+RAG, büyük dil modellerinin bilgi tabanlarıyla güçlendirilmesidir.
+
+### Nasıl Çalışır?
+1. Kullanıcı soru sorar
+2. Sistem, ilgili dökümanları arar (Retrieval)
+3. Bulunan bilgi LLM'e context olarak verilir
+4. LLM, context'e dayalı yanıt üretir (Generation)
+
+### Avantajları
+- Güncel bilgiye erişim
+- Hallüsinasyonu azaltır
+- Kaynak gösterebilir
+- Özel verilerle çalışabilir
+
+## Etik Konular
+
+### Önyargı (Bias)
+AI sistemleri, eğitim verilerindeki önyargıları öğrenebilir. Bu, adaletsiz kararlara yol açabilir.
+
+### Gizlilik
+Büyük miktarda veri toplama, gizlilik endişelerini beraberinde getirir.
+
+### İş Gücü Etkisi
+Otomasyon, bazı meslekleri dönüştürecek. Yeni beceriler öğrenmek gerekecek.
+
+## Araçlar ve Kütüphaneler
+
+### Python Kütüphaneleri
+- TensorFlow: Google'ın derin öğrenme kütüphanesi
+- PyTorch: Facebook'un derin öğrenme kütüphanesi
+- scikit-learn: Klasik makine öğrenmesi için
+- Hugging Face Transformers: NLP modelleri için
+
+### Bulut Servisleri
+- Google Cloud AI
+- AWS Machine Learning
+- Azure AI
+- OpenAI API
+
+## Sonuç
+
+Yapay zeka hızla gelişen bir alandır. Temel kavramları anlamak, bu teknolojileri etkili kullanmak için önemlidir.

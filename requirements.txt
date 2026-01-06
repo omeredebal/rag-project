@@ -1,0 +1,14 @@
+# RAG Projesi Bağımlılıkları
+
+# Embedding modeli için
+sentence-transformers>=2.2.0
+
+# Vektör veritabanı
+chromadb>=0.4.0
+
+# Ollama Python client (lokal LLM)
+ollama>=0.1.0
+
+# Yardımcı kütüphaneler
+numpy>=1.24.0
+tqdm>=4.65.0

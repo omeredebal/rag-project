@@ -1,0 +1,54 @@
+# Python Programlama Dili
+
+## Giriş
+
+Python, yüksek seviyeli, genel amaçlı bir programlama dilidir. Guido van Rossum tarafından geliştirilmiş ve ilk sürümü 1991 yılında yayınlanmıştır. Python, okunabilirliği ve temiz sözdizimi ile öne çıkar.
+
+## Temel Özellikler
+
+### Okunabilirlik
+Python'un en belirgin özelliği okunabilir olmasıdır. Girintileme (indentation) zorunludur ve bu sayede kod otomatik olarak düzenli görünür. Süslü parantez kullanılmaz.
+
+### Dinamik Tip Sistemi
+Python dinamik tipli bir dildir. Değişken tanımlarken tip belirtmenize gerek yoktur. Python, çalışma zamanında tipleri otomatik olarak belirler.
+
+### Çoklu Paradigma Desteği
+Python hem nesne yönelimli (OOP) hem de fonksiyonel programlama paradigmalarını destekler. İstediğiniz yaklaşımı kullanabilirsiniz.
+
+## Kullanım Alanları
+
+### Web Geliştirme
+Django ve Flask gibi popüler web framework'leri Python ile yazılmıştır. Instagram, Pinterest ve Spotify gibi büyük şirketler Python kullanır.
+
+### Veri Bilimi ve Analiz
+NumPy, Pandas ve Matplotlib gibi kütüphaneler sayesinde Python veri biliminde standart haline gelmiştir. Veri manipülasyonu ve görselleştirme için mükemmeldir.
+
+### Yapay Zeka ve Makine Öğrenmesi
+TensorFlow, PyTorch ve scikit-learn gibi kütüphaneler Python ekosistemindedir. Derin öğrenme ve makine öğrenmesi projeleri için tercih edilir.
+
+### Otomasyon ve Scripting
+Sistem yönetimi, dosya işlemleri ve tekrarlayan görevlerin otomasyonu için Python sıkça kullanılır. Basit sözdizimi hızlı script yazımına olanak tanır.
+
+## Python Sürümleri
+
+### Python 2
+Python 2, 2020 yılında resmi olarak kullanımdan kaldırıldı (EOL - End of Life). Artık güvenlik güncellemesi almıyor.
+
+### Python 3
+Python 3, güncel ve aktif olarak geliştirilen sürümdür. Tüm yeni projeler Python 3 ile başlatılmalıdır. Python 3.12 en güncel kararlı sürümdür.
+
+## Kurulum
+
+Python'u python.org adresinden indirebilirsiniz. macOS ve Linux sistemlerinde genellikle önceden yüklüdür. Windows için ayrıca kurulum gerekir.
+
+```bash
+# Python sürümünü kontrol etme
+python --version
+
+# Pip paket yöneticisi
+pip install paket_adi
+```
+
+## Sonuç
+
+Python, öğrenmesi kolay ve güçlü bir programlama dilidir. Geniş kütüphane ekosistemi ve aktif topluluğu sayesinde hemen hemen her alanda kullanılabilir.
