@@ -38,7 +38,7 @@ class Generator:
     >>> print(response)
     """
 
-    # Varsayılan prompt template
+    # Varsayılan prompt template (context ile)
     DEFAULT_TEMPLATE = """Sen yardımcı bir asistansın. Sana verilen bağlam bilgisini kullanarak soruyu yanıtla.
 
 KURALLAR:
@@ -50,6 +50,13 @@ KURALLAR:
 
 BAĞLAM:
 {context}
+
+SORU: {question}
+
+YANIT:"""
+
+    # Context olmadan sohbet template
+    CHAT_TEMPLATE = """Sen yardımcı bir Türkçe asistansın. Kullanıcının mesajına kısa ve samimi yanıt ver.
 
 SORU: {question}
 
@@ -105,8 +112,11 @@ YANIT:"""
         if not self.client:
             return self._fallback_response(question, context)
 
-        # Prompt'u oluştur
-        prompt = self.template.format(context=context, question=question)
+        # Context varsa RAG template, yoksa sohbet template kullan
+        if context and context.strip():
+            prompt = self.template.format(context=context, question=question)
+        else:
+            prompt = self.CHAT_TEMPLATE.format(question=question)
 
         print(f"🤖 LLM yanıt üretiyor ({self.model})...")
 

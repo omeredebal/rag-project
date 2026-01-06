@@ -112,7 +112,10 @@ class RAGPipeline:
 
         print("\n5️⃣  Retriever hazırlanıyor...")
         self.retriever = Retriever(
-            embedder=self.embedder, vector_store=self.vector_store, top_k=top_k
+            embedder=self.embedder,
+            vector_store=self.vector_store,
+            top_k=top_k,
+            score_threshold=0.5,  # Düşük skorlu sonuçları filtrele
         )
 
         print(f"\n6️⃣  Generator hazırlanıyor ({llm_model})...")
@@ -208,9 +211,11 @@ class RAGPipeline:
         retrieved = self.retriever.retrieve(question, top_k=k)
 
         if not retrieved:
-            print("⚠️  İlgili bilgi bulunamadı!")
+            print("⚠️  İlgili bilgi bulunamadı, doğrudan LLM yanıtlıyor...")
+            # Context olmadan sadece LLM'den yanıt al
+            answer = self.generator.generate(question=question, context="")
             return RAGResponse(
-                answer="Üzgünüm, bu konuda bilgi bulamadım.",
+                answer=answer,
                 sources=[],
                 retrieved_chunks=[],
             )

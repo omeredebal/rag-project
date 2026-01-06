@@ -106,6 +106,7 @@ class Retriever:
         # 3. Sonuçları dönüştür ve filtrele
         results = []
         for sr in search_results:
+            print(f"   📊 Skor: {sr.score:.3f} (eşik: {self.score_threshold})")
             # Skor eşiğini kontrol et
             if sr.score >= self.score_threshold:
                 results.append(
@@ -114,7 +115,9 @@ class Retriever:
                     )
                 )
 
-        print(f"✅ {len(results)} sonuç bulundu")
+        print(
+            f"✅ {len(results)} sonuç bulundu (filtrelendi: {len(search_results) - len(results)})"
+        )
 
         return results
 
